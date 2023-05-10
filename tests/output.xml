@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230510 08:29:51.274" rpa="false" schemaversion="3">
+<suite id="s1" name="Tui" source="/home/krzychu/PycharmProjects/zadanie/tests/tui.robot">
+<test id="s1-t1" name="Google" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 08:29:51.492" level="INFO">Opening browser 'chrome' to base url 'https://tui.pl'.</msg>
+<status status="PASS" starttime="20230510 08:29:51.489" endtime="20230510 08:30:00.289"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230510 08:30:00.290" endtime="20230510 08:30:00.965"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div/div/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230510 08:30:00.966" endtime="20230510 08:30:01.404"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div/div/div[1]/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230510 08:30:01.407" level="INFO">Clicking button '//*[@id="__next"]/div[1]/div/div/div[1]/div[3]/button'.</msg>
+<status status="PASS" starttime="20230510 08:30:01.406" endtime="20230510 08:30:01.961"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="__next"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230510 08:30:01.962" endtime="20230510 08:30:02.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230510 08:30:07.110" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230510 08:30:02.109" endtime="20230510 08:30:07.110"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>/html/body/div[7]/div/div[3]/div/div/div[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230510 08:30:07.112" level="INFO">Clicking button '/html/body/div[7]/div/div[3]/div/div/div[1]'.</msg>
+<msg timestamp="20230510 08:30:08.191" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230510 08:30:08.191" level="FAIL">Button with locator '/html/body/div[7]/div/div[3]/div/div/div[1]' not found.</msg>
+<status status="FAIL" starttime="20230510 08:30:07.111" endtime="20230510 08:30:08.193"/>
+</kw>
+<status status="FAIL" starttime="20230510 08:29:51.485" endtime="20230510 08:30:08.195">Button with locator '/html/body/div[7]/div/div[3]/div/div/div[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20230510 08:29:51.276" endtime="20230510 08:30:08.200"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tui">Tui</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
