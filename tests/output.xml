@@ -1,51 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230510 08:29:51.274" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230530 20:17:43.178" rpa="false" schemaversion="3">
 <suite id="s1" name="Tui" source="/home/krzychu/PycharmProjects/zadanie/tests/tui.robot">
 <test id="s1-t1" name="Google" line="10">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230510 08:29:51.492" level="INFO">Opening browser 'chrome' to base url 'https://tui.pl'.</msg>
-<status status="PASS" starttime="20230510 08:29:51.489" endtime="20230510 08:30:00.289"/>
+<msg timestamp="20230530 20:17:43.675" level="INFO">Opening browser 'chrome' to base url 'https://tui.pl'.</msg>
+<status status="PASS" starttime="20230530 20:17:43.662" endtime="20230530 20:17:53.151"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230510 08:30:00.290" endtime="20230510 08:30:00.965"/>
+<status status="PASS" starttime="20230530 20:17:53.152" endtime="20230530 20:17:53.369"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="__next"]/div[1]/div/div/div[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230510 08:30:00.966" endtime="20230510 08:30:01.404"/>
+<status status="PASS" starttime="20230530 20:17:53.369" endtime="20230530 20:17:54.358"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="__next"]/div[1]/div/div/div[1]/div[3]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230510 08:30:01.407" level="INFO">Clicking button '//*[@id="__next"]/div[1]/div/div/div[1]/div[3]/button'.</msg>
-<status status="PASS" starttime="20230510 08:30:01.406" endtime="20230510 08:30:01.961"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//*[@id="__next"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230510 08:30:01.962" endtime="20230510 08:30:02.109"/>
+<msg timestamp="20230530 20:17:54.360" level="INFO">Clicking button '//*[@id="__next"]/div[1]/div/div/div[1]/div[3]/button'.</msg>
+<status status="PASS" starttime="20230530 20:17:54.358" endtime="20230530 20:17:55.766"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230510 08:30:07.110" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230510 08:30:02.109" endtime="20230510 08:30:07.110"/>
+<msg timestamp="20230530 20:18:00.768" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230530 20:17:55.766" endtime="20230530 20:18:00.769"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:[data-testid="dialog-close-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:00.773" level="INFO">Clicking element 'css:[data-testid="dialog-close-button"]'.</msg>
+<status status="PASS" starttime="20230530 20:18:00.770" endtime="20230530 20:18:03.545"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:03.547" level="INFO">Clicking element '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/button'.</msg>
+<status status="PASS" starttime="20230530 20:18:03.546" endtime="20230530 20:18:04.647"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:[data-testid="dropdown-window--airport"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230530 20:18:04.657" endtime="20230530 20:18:05.215"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[2]/div[3]/div/h2</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230530 20:18:05.216" endtime="20230530 20:18:06.041"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/ul/li/ul/label[13]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:06.049" level="INFO">Clicking element '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/ul/li/ul/label[13]'.</msg>
+<status status="PASS" starttime="20230530 20:18:06.048" endtime="20230530 20:18:08.640"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>/html/body/div[7]/div/div[3]/div/div/div[1]</arg>
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[3]/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230510 08:30:07.112" level="INFO">Clicking button '/html/body/div[7]/div/div[3]/div/div/div[1]'.</msg>
-<msg timestamp="20230510 08:30:08.191" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230510 08:30:08.191" level="FAIL">Button with locator '/html/body/div[7]/div/div[3]/div/div/div[1]' not found.</msg>
-<status status="FAIL" starttime="20230510 08:30:07.111" endtime="20230510 08:30:08.193"/>
+<msg timestamp="20230530 20:18:08.646" level="INFO">Clicking button '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20230530 20:18:08.641" endtime="20230530 20:18:10.481"/>
 </kw>
-<status status="FAIL" starttime="20230510 08:29:51.485" endtime="20230510 08:30:08.195">Button with locator '/html/body/div[7]/div/div[3]/div/div/div[1]' not found.</status>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:[data-testid="dropdown-field--region"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:10.486" level="INFO">Clicking element 'css:[data-testid="dropdown-field--region"]'.</msg>
+<status status="PASS" starttime="20230530 20:18:10.484" endtime="20230530 20:18:12.060"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/ul[2]/div[4]/li[7]/label/span[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:12.062" level="INFO">Clicking element '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/ul[2]/div[4]/li[7]/label/span[3]'.</msg>
+<status status="PASS" starttime="20230530 20:18:12.061" endtime="20230530 20:18:13.040"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230530 20:18:18.051" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230530 20:18:13.047" endtime="20230530 20:18:18.052"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/ul[2]/div[4]/li[4]/label/span[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:18.053" level="INFO">Clicking element '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/ul[2]/div[4]/li[4]/label/span[3]'.</msg>
+<status status="PASS" starttime="20230530 20:18:18.052" endtime="20230530 20:18:18.859"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/ul[2]/div[4]/li[4]/label[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:18.861" level="INFO">Clicking element '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/ul[2]/div[4]/li[4]/label[6]'.</msg>
+<status status="PASS" starttime="20230530 20:18:18.859" endtime="20230530 20:18:19.893"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[3]/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:19.898" level="INFO">Clicking button '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[3]/div[3]/button'.</msg>
+<status status="PASS" starttime="20230530 20:18:19.897" endtime="20230530 20:18:21.754"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:[data-testid="dropdown-field--travel-date"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:21.762" level="INFO">Clicking element 'css:[data-testid="dropdown-field--travel-date"]'.</msg>
+<status status="PASS" starttime="20230530 20:18:21.761" endtime="20230530 20:18:22.570"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="bp3-tab-panel_gs-travelDate_tab-gs-travelDate-Od-do"]/div/div[2]/div[2]/div/div[2]/div/div/div[2]/button[11]/time</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:22.572" level="INFO">Clicking element '//*[@id="bp3-tab-panel_gs-travelDate_tab-gs-travelDate-Od-do"]/div/div[2]/div[2]/div/div[2]/div/div/div[2]/button[11]/time'.</msg>
+<status status="PASS" starttime="20230530 20:18:22.571" endtime="20230530 20:18:23.026"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[6]/div[2]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:23.037" level="INFO">Clicking element '//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[1]/div/div[6]/div[2]/button/span'.</msg>
+<status status="PASS" starttime="20230530 20:18:23.036" endtime="20230530 20:18:23.453"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:[data-testid="dropdown-field--travel-date"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230530 20:18:23.460" level="INFO">Clicking element 'css:[data-testid="dropdown-field--travel-date"]'.</msg>
+<msg timestamp="20230530 20:18:25.378" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230530 20:18:25.379" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="dropdown-field dropdown-field--travel-date dropdown-field--default dropdown-field--window-right" type="button" data-testid="dropdown-field--travel-date"&gt;...&lt;/button&gt; is not clickable at point (808, 16). Other element would receive the click: &lt;div class="loading-overlay" data-testid="loading-overlay"&gt;...&lt;/div&gt;
+  (Session info: chrome=113.0.5672.92)
+Stacktrace:
+#0 0x5593fc3e6133 &lt;unknown&gt;
+#1 0x5593fc11a966 &lt;unknown&gt;
+#2 0x5593fc15d3f2 &lt;unknown&gt;
+#3 0x5593fc15b5ac &lt;unknown&gt;
+#4 0x5593fc1593be &lt;unknown&gt;
+#5 0x5593fc158696 &lt;unknown&gt;
+#6 0x5593fc14d3ea &lt;unknown&gt;
+#7 0x5593fc176bd2 &lt;unknown&gt;
+#8 0x5593fc14cd13 &lt;unknown&gt;
+#9 0x5593fc176d9e &lt;unknown&gt;
+#10 0x5593fc18f1c7 &lt;unknown&gt;
+#11 0x5593fc1769a3 &lt;unknown&gt;
+#12 0x5593fc14b46a &lt;unknown&gt;
+#13 0x5593fc14c55e &lt;unknown&gt;
+#14 0x5593fc3a5cae &lt;unknown&gt;
+#15 0x5593fc3a98fe &lt;unknown&gt;
+#16 0x5593fc3b2f20 &lt;unknown&gt;
+#17 0x5593fc3aa923 &lt;unknown&gt;
+#18 0x5593fc37dc0e &lt;unknown&gt;
+#19 0x5593fc3cdb08 &lt;unknown&gt;
+#20 0x5593fc3cdc97 &lt;unknown&gt;
+#21 0x5593fc3de113 &lt;unknown&gt;
+#22 0x7f637cc94b43 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20230530 20:18:23.454" endtime="20230530 20:18:25.412"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230530 20:18:25.419" endtime="20230530 20:18:25.419"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="bp3-tab-panel_gs-travelDate_tab-gs-travelDate-Od-do"]/div/div[2]/div[1]/div/div[2]/div/div/div[2]/button[18]/time</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230530 20:18:25.420" endtime="20230530 20:18:25.420"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230530 20:18:25.421" endtime="20230530 20:18:25.421"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="content"]/main/div[1]/div/div/div[2]/div/div[1]/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230530 20:18:25.421" endtime="20230530 20:18:25.421"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230530 20:18:25.422" endtime="20230530 20:18:25.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="accordion__body-board"]/div/label[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230530 20:18:25.423" endtime="20230530 20:18:25.423"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="accordion__body-minHotelCategory"]/div/label[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230530 20:18:25.423" endtime="20230530 20:18:25.424"/>
+</kw>
+<status status="FAIL" starttime="20230530 20:17:43.661" endtime="20230530 20:18:25.424">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="dropdown-field dropdown-field--travel-date dropdown-field--default dropdown-field--window-right" type="button" data-testid="dropdown-field--travel-date"&gt;...&lt;/button&gt; is not clickable at point (808, 16). Other element would receive the click: &lt;div class="loading-overlay" data-testid="loading-overlay"&gt;...&lt;/div&gt;
+  (Session info: chrome=113.0.5672.92)
+Stacktrace:
+#0 0x5593fc3e6133 &lt;unknown&gt;
+#1 0x5593fc11a966 &lt;unknown&gt;
+#2 0x5593fc15d3f2 &lt;unknown&gt;
+#3 0x5593fc15b5ac &lt;unknown&gt;
+#4 0x5593fc1593be &lt;unknown&gt;
+#5 0x5593fc158696 &lt;unknown&gt;
+#6 0x5593fc14d3ea &lt;unknown&gt;
+#7 0x5593fc176bd2 &lt;unknown&gt;
+#8 0x5593fc14cd13 &lt;unknown&gt;
+#9 0x5593fc176d9e &lt;unknown&gt;
+#10 0x5593fc18f1c7 &lt;unknown&gt;
+#11 0x5593fc1769a3 &lt;unknown&gt;
+#12 0x5593fc14b46a &lt;unknown&gt;
+#13 0x5593fc14c55e &lt;unknown&gt;
+#14 0x5593fc3a5cae &lt;unknown&gt;
+#15 0x5593fc3a98fe &lt;unknown&gt;
+#16 0x5593fc3b2f20 &lt;unknown&gt;
+#17 0x5593fc3aa923 &lt;unknown&gt;
+#18 0x5593fc37dc0e &lt;unknown&gt;
+#19 0x5593fc3cdb08 &lt;unknown&gt;
+#20 0x5593fc3cdc97 &lt;unknown&gt;
+#21 0x5593fc3de113 &lt;unknown&gt;
+#22 0x7f637cc94b43 &lt;unknown&gt;
+</status>
 </test>
-<status status="FAIL" starttime="20230510 08:29:51.276" endtime="20230510 08:30:08.200"/>
+<status status="FAIL" starttime="20230530 20:17:43.180" endtime="20230530 20:18:25.425"/>
 </suite>
 <statistics>
 <total>
